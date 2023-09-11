@@ -1,0 +1,11 @@
+.index {
+    align-items: left;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+#slogan {
+    font-size: large;
+}
