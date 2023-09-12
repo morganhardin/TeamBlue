@@ -12,7 +12,7 @@ TeamBlue's SmartReserve Application
 
 Product Vision Statement
 FOR restaurant's employees and their customers WHO need an easy to use application that schedules and tracks reservations
-based on the date and time. THE SmartReserve is a resturant reservation application THAT can schedule and cancel 
+based on the date and time. THE SmartReserve is a restaurant reservation application THAT can schedule and cancel 
 reservations easily, track tables to see what is reserved and what is available, and offers two different view modes based
 on employee or customer access. UNLIKE OpenTable, resOS, and EatApp, SmartReserve is a free and easy to use for all restaurants 
 who want to manage their tables and reservations. OUR PRODUCT is the smart choice for restaurant reservations.
