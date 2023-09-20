@@ -1,0 +1,28 @@
+Who are you? (Age, occupation, etc.)
+
+Is your occupation related to restaurant service?
+
+As a restaurant employee:
+
+    What is the most frustrating part about service in the front?
+
+    What is the most frustrating part about how service relates to the back?
+
+    What is the basic functionality of your current systems that make this frustrating?
+
+    What can be changed to make it less frustrating?
+
+    How much visual aid is needed? What type of visual aids?
+
+As a customer:
+
+    Do you care what type of seating you get when reserving? (Booth, windows?)
+
+    How often do you reserve through applications versus calling in?
+
+    Would you rather reserve through an application?
+
+    Are you frustrated with any issues you find with how reserving works currently?
+
+    If so, explain. If not, could there be any way to lessen the steps?
+
