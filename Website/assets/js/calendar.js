@@ -4,6 +4,10 @@ var month = 1
 var year = 2024
 
 $(function(){
+    var currentDay = new Date()
+    month = currentDay.getMonth()+1
+    year = currentDay.getFullYear()
+
     $("#calendar-month-current").click(function(){
         console.log("Number of days in month " + MONTHS[month-1] + " of the year " + year + " is " + getDaysInMonth(year, month));
     });
@@ -23,15 +27,10 @@ $(function(){
         }
         buildCalendar(year, month)
     })
-    /*$('.calendar-day').popover({
-        title: "January 2024 Test", 
-        content: "This will be generated with:\nTime slot 1: 10 tables free\nTime slot 2: 0 tables free\netc.",
-        placement: "bottom"
-    });*/
-    $('.calendar-day').click(function() {
-        $('.calendar-day').css('background-color: pink')
-    });
     // CREATE CALENDAR
+    $('#calendar-grid').on('click', '.calendar-day', function() {
+        
+    });
     buildCalendar(year, month)
 });
 
@@ -46,14 +45,26 @@ function buildCalendar(year, month) {
 
     $('#calendar-month-current').text(MONTHS[month-1] + ' ' + year)
 
-    for (let i = 1; i <= days; i++) {
-        calendarHtml += `<div id="calendar-day-`+i+`" class="calendar-day col-sm-2 border btn">`+i+`</div>`
+    var currentDay = new Date()
 
-        $('#calendar-day-'+i).popover({
-            title: "January "+i+", 2024", 
-            content: "",
-            placement: "bottom"
-        });
+    for (let i = 1; i <= days; i++) {
+        var timeslotClass = 'open'
+        var seatsOpen = 10
+        console.log(currentDay.getDate())
+        if (currentDay.getFullYear() > year || 
+        (currentDay.getFullYear() == year && currentDay.getMonth()+1 > month) || 
+        (currentDay.getFullYear() == year && currentDay.getMonth()+1 == month && currentDay.getDate() > i)) {
+            timeslotClass = 'closed'
+            seatsOpen = 0
+        }
+
+        var calInner = `<div>`+ i +`</div>`
+        for (let j = 1; j <= 10; j+=2) {
+            calInner += `
+                <div class="calendar-day-timeslot timeslot-`+timeslotClass+`">`+ j + ':00' + ' (' + seatsOpen + ')' + `</div>
+            `
+        }
+        calendarHtml += `<div id="calendar-day-`+i+`" class="calendar-day col-sm-2 border">`+calInner+`</div>`
     }
     calendarHtml += `</div>`
 
