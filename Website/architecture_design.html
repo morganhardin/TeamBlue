@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>SmartReserve</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: Lumia
+  * Updated: Jul 27 2023 with Bootstrap v5.3.1
+  * Template URL: https://bootstrapmade.com/lumia-bootstrap-business-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body>
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top d-flex align-items-center">
+    <div class="container d-flex align-items-center">
+      <div class="logo me-auto">
+        <h1><a href="index.html">SmartReserve</a></h1>
+      </div>
+      <nav id="navbar" class="navbar order-last order-lg-0">
+        <ul>
+          <li><a class="nav-link scrollto active" href="index.html">Home</a></li>
+          <li><a class="nav-link" href="#video">Video</a></li>
+          <li><a class="nav-link" href="#architecture_design">Architecture Design</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+      <div class="header-social-links d-flex align-items-center">
+        <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
+        <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+        <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+        <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></i></a>
+      </div>
+    </div>
+  </header><!-- End Header -->
+  <section id="hero" class="d-flex flex-column justify-content-center align-items-center">
+    <div class="container text-center text-md-left" data-aos="fade-up">
+      <h1>SmartReserve <span>Architecture</span></h1>
+      <h2>This shows our architecture design models that show the structure of SmartReserve and also discusses our choices when making architectural and service decisions.</h2>
+      <h2>Be smart and use SmartReserve.</h2>
+      <a href="#architecture_design" class="btn-get-started">Get Started</a>
+    </div>
+  </section><!-- End Hero -->
+
+  <!-- ======= Architecture Design Section ======= -->
+  <section id="architecture_design" class="interview">
+    <div class="container">
+      <div class="section-title">
+        <h2>Architectural Layered Model</h2>
+        <img src="assets/img/ArchitecturalModel_SmartReserve.png" width="30%" alt="">
+        <br>
+        <br>
+        <h2>Design Principles</h2>
+        <img src="assets/img/DesignPrinciples_SmartReserve.jpeg" width="60%" alt="">
+        <br>
+        <br>
+        <h2>Distribution Architecture</h2>
+        <img src="assets/img/BlockDiagram_SmartReserve.png" width="30%" alt="">
+        <br>
+        <br>
+        <h2>Narrative for SmartReserve's Technology</h2>
+        <p>SmartReserve will connect to a relational database, SQL, and will use a multi-tenant architecture. This is because the data needs to be easily created, edited, read, and deleted to keep businesses running efficiently. 
+          The use of a multi-tenant architecture allows the company to save money while also making sure new features can be deployed easier. Although it is not as secure, SmartReserve will hold lots of restaurant’s data as well as the data of all of their customers. 
+          So, having a single-tenant architecture for thousands of people is extremely expensive for a small company, which is why SmartReserve is built with a multi-tenant architecture. 
+          SmartReserve will also go through the cloud based Amazon Web Services so their load balancing of the servers, container storage, and storage will be automatically handled by AWS. 
+          SmartReserve will specifically be using Amazon’s Codefresh Software Delivery Platform because it allows SmartReserve to be built, tested, delivered, and managed. 
+          It is flexible, simple, yet expensive. With this being said, it is worth the cost since it is extremely helpful in deploying the application and its feature quickly to customers. SmartReserve will be run on a web server for our website and an application server for the actual application. 
+          This is because SmartReserve will holds lots of data, and it does not need to be exposed to the internet through a web browser. Client data should be kept secure from outside threats. SmartReserve will use various open-source products like jQuery, mySQL, and Wireshark. 
+          These tools will always stay up-to-date on its latest version to keep the application and data secure. SmartReserve will also use developer tools like Bootstrap, GitHub, Visual Studio Code, and Docker to implement the application and test and debug it before it is deployed.</p>
+        <br>
+        <br>
+        <h2>Containerization Architecture</h2>
+        <img src="assets/img/ContainerSystem_SmartReserve.png" width="60%" alt="">
+        <br>
+        <br>
+        <h2>Microservice Design</h2>
+        <img src="assets/img/MicroserviceDesign_SmartReserve.png" width="60%" alt="">
+      </div>
+    </div>
+  </section><!-- End Architecture Design Section -->
+  </main><!-- End Main Section -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-3 col-md-6 footer-contact">
+            <h3>Smart Reserve</h3>
+            <p>
+              2001 Newburg Road <br>
+              Louisville, KY 40205<br>
+              United States <br><br>
+              <strong>Phone:</strong> (502)939-9081 - (502)631-0119<br>
+              <strong>Email:</strong> mhardin5@bellarmine.edu - tcambron@bellarmine.edu<br>
+            </p>
+          </div>
+          <div class="col-lg-2 col-md-6 footer-links">
+            <h4>Useful Links</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Home</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">About us</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Services</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Terms of Service</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Privacy Policy</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4>Our Features</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Reservations</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Scheduling</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Tracking</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Calendar</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Viewing Modes</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-4 col-md-6 footer-newsletter">
+            <h4>Join Our Newsletter</h4>
+            <p>Join our Newsletter for free to get the latest updates on SmartReserve and upcoming features.</p>
+            <form action="" method="post">
+              <input type="email" name="email"><input type="submit" value="Subscribe">
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container d-md-flex py-4">
+      <div class="me-md-auto text-center text-md-start">
+        <div class="copyright">
+          &copy; Copyright <strong><span>SmartReserve</span></strong>. All Rights Reserved.
+        </div>
+        <div class="credits">
+          <!-- All the links in the footer should remain intact. -->
+          <!-- You can delete the links only if you purchased the pro version. -->
+          <!-- Licensing information: https://bootstrapmade.com/license/ -->
+          <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/lumia-bootstrap-business-template/ -->
+          Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+        </div>
+      </div>
+      <div class="social-links text-center text-md-right pt-3 pt-md-0">
+        <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+        <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+        <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+        <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
+        <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+      </div>
+    </div>
+  </footer><!-- End Footer -->
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
