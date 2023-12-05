@@ -1,3 +1,5 @@
+/** TABLE TRACKER JS */
+
 const tableTracker = document.getElementById("table-tracker");
 const tableList = document.getElementById("table-list");
 const totalTables = document.getElementById("total-tables");
