@@ -1,0 +1,83 @@
+.tabletracker .container-table
+{
+    max-width: 1000px; 
+    margin: 0 auto; 
+    background-color: #f9f9f9; 
+    padding: 20px; 
+    border-radius: 8px; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.tabletracker h4
+{
+    text-align: center; 
+    margin-bottom: 20px;
+}
+
+.tabletracker form { 
+    display: flex; 
+    justify-content: center; 
+    margin-bottom: 20px; 
+} 
+
+.tabletracker input[type="number"],
+input[type="text"], 
+input[type="number"] { 
+    padding: 10px; 
+    border: 1px solid #ccc; 
+    border-radius: 4px; 
+    outline: none; 
+} 
+
+.tabletracker input[type="number"]::placeholder,
+input[type="text"]::placeholder, 
+input[type="number"]::placeholder { 
+    color: #999; 
+} 
+
+.tabletracker button { 
+    padding: 10px 20px; 
+    background-color: #3498db; 
+    color: white; 
+    border: none; 
+    border-radius: 4px; 
+    cursor: pointer; 
+} 
+
+.tabletracker button:hover { 
+    background-color: #5faee3; 
+}
+
+.tabletracker .party-table { 
+    border: 1px solid #ddd; 
+    border-radius: 8px; 
+    overflow: hidden; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+} 
+
+.tabletracker table { 
+    width: 100%; 
+    border-collapse: collapse; 
+} 
+
+.tabletracker thead th { 
+    background-color: #f2f2f2; 
+    padding: 10px; 
+    text-align: left; 
+} 
+  
+.tabletracker tbody td { 
+    padding: 10px; 
+    border-top: 1px solid #ddd; 
+} 
+  
+.tabletracker .delete-btn { 
+    color: #3498db; 
+    cursor: pointer; 
+} 
+  
+.tabletracker .total-tables { 
+    padding: 10px; 
+    text-align: right; 
+    background-color: #f2f2f2; 
+}
