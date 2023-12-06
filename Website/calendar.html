@@ -20,7 +20,7 @@
 
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
-  <link href="assets/css/calendar.css?v=0.17" rel="stylesheet">
+  <link href="assets/css/calendar.css?v=0.1" rel="stylesheet">
 
   <script src="assets/vendor/jquery/jquery-3.7.1.min.js"></script>
 
@@ -83,24 +83,29 @@
         </section>
 
         <section id="timeslot-view" class="d-flex flex-column justify-content-center align-items-center">
-            <h1>Timeslot View</h1>
+            <h1 id="timeslot-view-header">Timeslot View</h1>
+            <h3 id="timeslot-view-info"></h3>
+            <h5 id="timeslot-view-tablesleft"></h5>
+            <a id="timeslot-register" href="tabletracker.html"></a>
         </section>
 
         <section id="log-in" class="d-flex flex-column justify-content-center align-items-center">
-            <h1>Restaurant Log-In</h1>
-            <form action="" class="d-flex flex-column justify-content-center align-items-center">
-                <div class="form-group row">
-                <label class="col" for="uname">Username:</label>
-                <input class="col" type="uname" class="form-control" id="uname">
+            <h1 id="log-in-header">Restaurant Log-In</h1>
+            <div id="log-in-body">
+                <div class="row">
+                <label class="col">Username:</label>
+                <input class="col" type="input" id="log-in-uname">
                 </div>
-                <div class="form-group row">
-                <label class="col" for="pwd">Password:</label>
-                <input class="col" type="password" class="form-control" id="pwd">
+                <div class="row">
+                <label class="col">Password:</label>
+                <input class="col" type="password" id="log-in-pwd">
                 </div>
-                <button type="submit" class="btn btn-default">Log-In</button>
-            </form>
+                <button id="log-in-btn" type="button" class="btn btn-default" >Log-In</button>
+            </div>
         </section>
+        
     </main>
+    
     <!-- ======= Footer ======= -->
     <footer id="footer">
         <div class="footer-top">
@@ -182,7 +187,7 @@
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
-  <script src="assets/js/calendar.js?v=0.35"></script>
+  <script src="assets/js/calendar.js?v=0.1"></script>
 
 </body>
 
