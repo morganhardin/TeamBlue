@@ -17,13 +17,6 @@ $(function(){
     month = currentDay.getMonth()+1
     year = currentDay.getFullYear()
 
-    if (tables[year] == null) {
-        tables[year] = {}
-    }
-    if (tables[year][month] == null) {
-        tables[year][month] = {}
-    }
-
     $("#log-in-btn").click(function() {
         restaurantLogIn()
     })
@@ -63,6 +56,13 @@ function getDaysInMonth(year, month) {
 }
 
 function buildCalendar(year, month) {
+    if (tables[year] == null) {
+        tables[year] = {}
+    }
+    if (tables[year][month] == null) {
+        tables[year][month] = {}
+    }
+
     var calendarHtml = `<div class="row">`
     var days = getDaysInMonth(year, month)
 
