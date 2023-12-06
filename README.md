@@ -22,4 +22,5 @@ DOCKER:
    1. Open Terminal in /TeamBlue/Website/
    2. Run "docker build . -t smartreserve"
    3. Run "docker run -d -p 3000:3000 smartreserve"
-   4. Run "docker stop {container}" when done using the application.
+      1. Run "docker run -d -p 3000:3000 smartreserve test" if you wish to perform a unit test.
+   4. Run "docker stop {container}" when done using the application. This is not needed after a unit test.
