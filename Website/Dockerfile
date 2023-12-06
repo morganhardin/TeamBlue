@@ -1,4 +1,4 @@
-FROM node:12.22.9
+FROM node:18.19.0
 
 WORKDIR /usr/src/app
 
@@ -10,6 +10,7 @@ EXPOSE 3000
 
 ENV NAME smartreserve
 
-CMD ["npm", "start"]
+ENTRYPOINT [ "npm" ]
+CMD ["start"]
 
 COPY . .

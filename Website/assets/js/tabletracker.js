@@ -64,7 +64,21 @@ function deleteParty(event)
     }
 }
 
-tableTracker.addEventListener("submit", addParty);
-tableList.addEventListener("click", deleteParty);
+function testAddParty() {
+    const customerData = {
+        number: 99,
+        name: "Test Name",
+        size: 2,
+        time: "10:00",
+    };
 
-renderParties();
+    parties.push(customerData);
+    return parties.length
+}
+module.exports = testAddParty
+
+document.addEventListener('DOMContentLoaded', function () { 
+    tableTracker.addEventListener("submit", addParty);
+    tableList.addEventListener("click", deleteParty);
+    renderParties();
+})
