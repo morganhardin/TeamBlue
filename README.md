@@ -17,3 +17,9 @@ reservations easily, track tables to see what is reserved and what is available,
 on employee or customer access. UNLIKE OpenTable, resOS, and EatApp, SmartReserve is a free and easy to use for all restaurants 
 who want to manage their tables and reservations. OUR PRODUCT is the smart choice for restaurant reservations.
 Be smart and use SmartReserve.
+
+DOCKER:
+   1. Open Terminal in /TeamBlue/Website/
+   2. Run "docker build . -t smartreserve"
+   3. Run "docker run -d -p 3000:3000 smartreserve"
+   4. Run "docker stop {container}" when done using the application.
